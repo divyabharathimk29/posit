@@ -1,100 +1,123 @@
 body {
-  font-family: 'Bebas Neue', cursive;
-  width: 100vw;
-  height: 100vh;
+	font-family: 'Open sans', sans-serif;
+	width: 100vw;
+	height: 100vh;
 }
-.et_pb_contact_form_label {
-	display: block;
-	color: black;
-	font-weight: bold;
-  letter-spacing: 1.2px;
-	font-size: 18px;
-	padding-bottom: 5px;
+.file-upload {
+	background-color: #ffffff;
+	width: 30vw;
+	margin: 0 auto;
+	padding: 20px;
 }
-input[id="et_pb_contact_brand_file_request_0"] {
+.icon{
+	margin: 2vw 0 0 0;
+}
+.file-upload-btn {
+  	width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #EF5660;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #fb303d;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1.5vw 0 0 0;
+}
+
+.file-upload-btn:hover {
+	background: #ff3a47;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+	outline: none;
+}
+
+.file-upload-btn:active {
+	border: 0;
+	transition: all .2s ease;
+	outline: none;
+}
+
+.file-upload-content {
 	display: none;
-}
-label[for="et_pb_contact_brand_file_request_0"] {
-	background: #fff;
-	height: 145px;
-	background-image: url("../assets/img/upload.png");
-	background-repeat: no-repeat;
-	background-position: top 18px center;
-	position: absolute;
-  background-size: 7%;
-	color: transparent;
-  margin: auto;
-	width: 450px;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-	border: 3px dashed #a2a1a7;
-	box-sizing: border-box;
-}
-label[for="et_pb_contact_brand_file_request_0"]:before {
-	content: "Drag and Drop a file here";
-	display: block;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 14px;
-	color: #202020;
-	font-weight: 400;
-	left:0;
-	right:0;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 }
-label[for="et_pb_contact_brand_file_request_0"]:after {
-	display: block;
-	content: 'Browse';
-	background: #16a317;
-	width: 86px;
-	height: 27px;
-  line-height: 27px;
+
+.file-upload-input {
 	position: absolute;
-	bottom: 19px;
-	font-size: 14px;
-	color: white;
-	font-weight: 500;
-	left:0;
-	right:0;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.image-upload-wrap {
+	margin-top: 20px;
+	border: 4px dashed #c3c3c3;
+	position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+	background-color: #d3ebef;
+	border: 4px dashed #c3c3c3;
+}
+
+.image-title-wrap {
+	padding: 0 15px 15px 15px;
+	color: #222;
+}
+
+.drag-text {
 	text-align: center;
 }
-label[for="et_pb_contact_brand_request_0"]:after {
-	content: " (Provide link or Upload files if you already have guidelines)";
-	font-size: 12px;
-	letter-spacing: -0.31px;
-	color: #7a7a7a;
-	font-weight: normal;
+
+.drag-text h3 {
+  	font-weight: 600;
+	text-transform: uppercase;
+	color: #908d8d;
+	margin: 2vw 0 2vw 0;
+	font-size: 1.5vw;
 }
-label[for="et_pb_contact_design_request_0"]:after {
-	content: " (Provide link or Upload design files)";
-	font-size: 12px;
-	letter-spacing: -0.31px;
-	color: #7a7a7a;
-	font-weight: normal;
+
+.file-upload-image {
+	max-height: 200px;
+	max-width: 200px;
+	margin: auto;
+	padding: 20px;
 }
-label[for="et_pb_contact_brand_file_request_0"].changed, label[for="et_pb_contact_brand_file_request_0"]:hover {
-  background-color: #e3f2fd;
+
+.remove-image {
+	width: 15vw;
+    margin: 0;
+    color: #fff;
+    background: #ef5660;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #fb303d;
+    transition: all .2s ease;
+    outline: none;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    font-size: 1vw;
 }
-label[for="et_pb_contact_brand_file_request_0"] {
-  cursor: pointer;
-  transition: 400ms ease;
+
+.remove-image:hover {
+	background: #ff3a47;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
 }
-.file_names {
-	display: block;
-	position: absolute;
-	color: black;
-	left: 0;
-	bottom: -30px;
-	font-size: 13px;
-	font-weight: 300;
-}
-.file_names {
-  text-align: center;
+
+.remove-image:active {
+	border: 0;
+	transition: all .2s ease;
 }

@@ -7,9 +7,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-  <label for="et_pb_contact_brand_file_request_0" class="et_pb_contact_form_label">Enter</label>
-  <input type="file" id="et_pb_contact_brand_file_request_0" class="file-upload">
+    
+<div class="file-upload">
+  <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="drag-text">
+        <img class="icon" src="upload.png" alt="upload.png" width="80" height="55">
+      <h3>Drag and drop a file<br>or<br>select add image</h3>
+    </div>
+  </div>
+  <div class="file-upload-content">
+    <img class="file-upload-image" src="#" alt="your image" />
+    <div class="image-title-wrap">
+      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded image</span></button>
+    </div>
+  </div>
+  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add image</button>
 </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
