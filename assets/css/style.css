@@ -1,0 +1,194 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf'); 
+}
+@font-face {
+  font-family: Open Sans;
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat/OpenSans-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat/OpenSans-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat/OpenSans-SemiBold.ttf'); 
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Roboto/Roboto-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Roboto/Roboto-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/Roboto/Roboto-SemiBold.ttf'); 
+}
+@font-face {
+  font-family: Oswald;
+  src: url('../fonts/Oswald/static/Oswald-Regular.ttf'); 
+}
+* {
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  background: #ECECEC;
+}
+.white-box{
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.header img{
+  max-width: 100vw;
+  width: 10vw;
+  height: auto;
+}
+.white-box h2{
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #EF5660;
+  letter-spacing: 5px;
+  top: 8vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.et_pb_contact_form_label {
+  display: block;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+input[id="et_pb_contact_brand_file_request_0"] {
+  display: none;
+}
+label[for="et_pb_contact_brand_file_request_0"] {
+  background: #fff;
+  height: 12vw;
+  background-image: url("../img/upload.png");
+  background-repeat: no-repeat;
+  background-position: top 18px center;
+  position: absolute;
+  background-size: 25%;
+  color: transparent;
+  margin: auto;
+  width: 20vw;
+  top: 55%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  border: 3px dashed #a2a1a7;
+  box-sizing: border-box;
+}
+label[for="et_pb_contact_brand_file_request_0"]:before {
+  content: "Drag and Drop a file here";
+  display: block;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 1.2vw;
+  color: #202020;
+  font-weight: 400;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+label[for="et_pb_contact_brand_file_request_0"]:after {
+  display: block;
+  content: 'Browse';
+  background: #EF5660;
+  width: 7vw;
+  height: 2vw;
+  line-height: 27px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.3vw;
+  color: white;
+  font-weight: 500;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+label[for="et_pb_contact_brand_request_0"]:after {
+  content: " (Provide link or Upload files if you already have guidelines)";
+  font-size: 12px;
+  letter-spacing: -0.31px;
+  color: #7a7a7a;
+  font-weight: normal;
+}
+label[for="et_pb_contact_design_request_0"]:after {
+  content: " (Provide link or Upload design files)";
+  font-size: 12px;
+  letter-spacing: -0.31px;
+  color: #7a7a7a;
+  font-weight: normal;
+}
+label[for="et_pb_contact_brand_file_request_0"].changed, label[for="et_pb_contact_brand_file_request_0"]:hover {
+  background-color: #e3f2fd;
+}
+label[for="et_pb_contact_brand_file_request_0"] {
+  cursor: pointer;
+  transition: 400ms ease;
+}
+.file_names {
+  display: block;
+  position: absolute;
+  color: black;
+  left: 0;
+  bottom: -30px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.file_names {
+  text-align: center;
+}
